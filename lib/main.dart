@@ -1,23 +1,23 @@
 import 'package:flutter/material.dart';
-import 'fichaproducto.dart';
+import 'package:myapp/pantallas/pantalla_bienvenida.dart';
 
-// Suggested code may be subject to a license. Learn more: ~LicenseLog:884209073.
-void main() => runApp(const AppProducto());
 
-class AppProducto extends StatelessWidget {
-  const AppProducto({super.key});
+void main() => runApp(const AppAprendizaje());
+
+class AppAprendizaje extends StatelessWidget {
+  const AppAprendizaje({super.key});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Aplicacion producto',
-      theme: ThemeData(primarySwatch: Colors.blue),
-      home: const FichaProducto(
-          nombre: 'Producto ejemplo',
-          descripcion: 'Breve descripcion del producto',
-          precio: 21,
-          imagen: 'producto.png'),
+      title: 'Aprendiendo Flutter',
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+      ),
+      home: const PantallaBienvenida(),
     );
   }
 }
+
+
