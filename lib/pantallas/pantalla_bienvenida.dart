@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:myapp/pantallas/inicio_pantalla.dart';
 
 class PantallaBienvenida extends StatelessWidget {
   const PantallaBienvenida({super.key});
@@ -78,7 +79,7 @@ class PantallaBienvenida extends StatelessWidget {
                                             context,
                                             MaterialPageRoute(
                                                 builder: (context) =>
-                                                    const PantallaBienvenida()));
+                                                    const InicioPantalla()));
                                       }, //onpressed
                                       child: const Text(
                                         "Empezar",
