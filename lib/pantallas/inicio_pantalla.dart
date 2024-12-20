@@ -1,6 +1,8 @@
 import 'package:bottom_navy_bar/bottom_navy_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:myapp/pantallas/componentes/appbar.dart';
+import 'package:myapp/pantallas/componentes/categoria.dart';
+import 'package:myapp/pantallas/componentes/clasificacion.dart';
 
 class InicioPantalla extends StatefulWidget {
   const InicioPantalla({super.key});
@@ -102,15 +104,41 @@ class _InicioPantallaState extends State<InicioPantalla> {
                   // aqui me quede
                 ], //childrens Row
               ),
+              // aqui categoria
+              const Distribucion(),
               const SizedBox(
                 height: 20,
               ),
-              const Row(
-                children: [], //childrens Row
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+
+                  const Text(
+                    "Categorias",
+                    style: TextStyle(
+                        fontSize: 20, fontWeight: FontWeight.bold),
+                  ),
+                InkWell(
+                  onTap: () { },
+                  child: const Text("Ver Todo",
+                  style: TextStyle(
+                    color: Colors.blue,
+                    fontSize: 16,
+                   
+                  ),
+                  ),
+
+
+                )
+                ], //childrens Row
               ),
               const SizedBox(
                 height: 20,
-              )
+              ),
+              const ListaCategoria(),
+              const SizedBox(
+                height: 20,
+              ),
             ] //child, childrens Column
                 ),
           )

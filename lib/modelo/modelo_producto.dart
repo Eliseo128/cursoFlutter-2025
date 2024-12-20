@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class Producto {
   final String imagen, titulo;
   final int id, cursos;
@@ -14,33 +13,37 @@ class Producto {
   });
 }
 
-List<Producto> products = [
+List<Producto> productos = [
   Producto(
     id: 1,
-    titulo: "Graphic Design",
-    imagen: "assets/images/graphics.png",
+    titulo: "Disenio Grafico",
+    // imagen: "assets/imagenes/graphics.png", para android
+    imagen: "/imagenes/graphics.png",
     color: const Color(0xFF71b8ff),
     cursos: 16,
   ),
   Producto(
     id: 2,
-    titulo: "Programming",
-    imagen: "assets/images/programming.png",
+    titulo: "Programacion",
+    // imagen: "assets/imagenes/programming.png", para android
+    imagen: "/imagenes/programming.png",
     color: const Color(0xFFff6374),
     cursos: 22,
   ),
   Producto(
     id: 3,
-    titulo: "Finance",
-    imagen: "assets/images/finance.png",
-    color: Color(0xFFffaa5b),
+    titulo: "Finanzas",
+    // imagen: "assets/imagenes/finance.png", para android
+    imagen: "/imagenes/finance.png",
+    color: const Color(0xFFffaa5b),
     cursos: 15,
   ),
   Producto(
     id: 4,
     titulo: "UI/Ux design",
-    imagen: "assets/images/ux.png",
-    color: Color(0xFF9ba0fc),
+    // imagen: "assets/imagenes/ux.png", para android
+    imagen: "/imagenes/ux.png",
+    color: const Color(0xFF9ba0fc),
     cursos: 18,
   ),
 ];
